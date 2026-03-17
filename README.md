@@ -5,7 +5,6 @@ Aplicativo mobile desenvolvido em React Native com Expo da FIAP.
 ## Requisitos
 
 - Tela de Login com e-mail, senha e switch "lembrar-me"
-- Listagem de armários pessoais
 - Busca por disciplina
 - Componente personalizado `InputField`
 
