@@ -16,6 +16,7 @@ interface InputFieldProps extends TextInputProps {
   error?: string;
 }
 
+
 export function InputField({ label, iconName, isPassword = false, error, ...rest }: InputFieldProps) {
   const [visible, setVisible] = useState(false);
 

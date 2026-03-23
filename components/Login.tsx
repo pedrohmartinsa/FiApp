@@ -33,6 +33,8 @@ export function Login({ onLogin }: LoginProps) {
     else if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = 'E-mail inválido.';
     if (!password) newErrors.password = 'Informe sua senha.';
     else if (password.length < 6) newErrors.password = 'Mínimo 6 caracteres.';
+    if (email !== "admin@fiap.com.br") newErrors.email = "E-mail de Admin inválido";
+    else if (password !== "123456") newErrors.password = "Senha de Admin inválido";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
